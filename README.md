@@ -1,6 +1,6 @@
 # Luminar Security
 
-![Tests Status](https://img.shields.io/github/actions/workflow/status/luminar-organization/security/test.yml?label=Tests)
+![Tests Status](https://img.shields.io/github/actions/workflow/status/luminar-organization/security/tests.yml?label=Tests)
 
 Luminar Security is a PHP library designed to provide a comprehensive set of security utilities and components for building secure web applications. It includes modules for authentication, encryption, hashing, protection against common web vulnerabilities, and more.
 
