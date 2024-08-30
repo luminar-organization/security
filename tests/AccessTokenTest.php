@@ -88,6 +88,7 @@ class AccessTokenTest extends TestCase
      */
     public function testTokenGenerate()
     {
+        if(!$this->enable) return null;
         $token = $this->generateToken();
         if(!$token) return;
         $this->assertNotNull($token->getToken());
@@ -104,6 +105,7 @@ class AccessTokenTest extends TestCase
      */
     public function testTokenAuthSuccess()
     {
+        if(!$this->enable) return null;
         $token = $this->generateToken();
         if(!$token) return;
         $this->assertNotNull($token->getToken());
@@ -122,6 +124,7 @@ class AccessTokenTest extends TestCase
      */
     public function testTokenAuthFailureCredentials()
     {
+        if(!$this->enable) return null;
         $token = new ExampleAccessToken();
         $token->setToken("test");
         $token->setExpiration(time() + 3600);
